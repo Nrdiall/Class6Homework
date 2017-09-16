@@ -8,7 +8,7 @@ polymorphism and adaptability. I can easily change or modify my code without
 to much problem and adapt to whatever situation I find is nececary.
 
     Being able to utilize Liskov Substitution method is really useful when you 
-want to make your code more adaptable. eing able to change from one object to a 
+want to make your code more flexable. Being able to change from one object to a 
 different object makes it easy to change and modify coding easily making this
 method really advantagious. 
  */
