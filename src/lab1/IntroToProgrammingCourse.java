@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @author      Naython
  * @version     1.00
  */
-public class IntroToProgrammingCourse {
+public class IntroToProgrammingCourse extends Course{
     private String courseName;
     String courseNumber;
     private double credits;
@@ -19,7 +19,7 @@ public class IntroToProgrammingCourse {
         this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
+    public String getCourseNumber(){
         return courseNumber;
     }
 

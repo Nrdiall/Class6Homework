@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
  * @author      Naython
  * @version     1.00
  */
-public class AdvancedJavaCourse extends Course {
+public class AdvancedJavaCourse extends IntroJavaCourse{
     private String courseNumber;
     private double credits;
     private String prerequisites;

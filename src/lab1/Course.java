@@ -13,7 +13,6 @@ public abstract class Course {
     private String courseNumber;
     private double credits;
     
-    public abstract String getPrerequisites();
 
     public String getCourseNumber() {
         return courseNumber;
@@ -21,7 +20,7 @@ public abstract class Course {
 
     public void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0){
-            throw new IllegalArgumentException("Please enter a proper ID");
+            throw new IllegalArgumentException("Course number cannot be null or empty");
         }else{ 
             this.courseNumber = courseNumber;
         }
@@ -31,12 +30,13 @@ public abstract class Course {
         return credits;
     }
 
-    public void setCredits(double credits) {
-         if(credits == 0 || credits > 5){
-            throw new IllegalArgumentException("Invalid number for credits");
-        }else{ 
-           this.credits = credits;
+   public void setCredits(double credits) {
+        if(credits < 0.5 || credits > 4.0) {
+            throw new IllegalArgumentException("Credits must be in the range of .5 and 4.0");
+        }else{
+            this.credits = credits;
         }
+    }
        
     }
     
