@@ -7,10 +7,11 @@ package lab1;
  * @version     1.00
  */
 public class IntroJavaCourse extends Course {
-    String prerequisites;
+    private String prerequisites;
     
-    public String getPrerequisites() {
-        return prerequisites;
+    public void getPrerequisites() {
+        SimpleOutput so = new SimpleOutput();
+        so.writeStringToConsole(prerequisites);
     }
 
     public void setPrerequisites(String prerequisites) {

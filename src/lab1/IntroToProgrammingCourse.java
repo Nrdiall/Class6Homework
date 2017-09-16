@@ -1,6 +1,5 @@
 package lab1;
 
-import javax.swing.JOptionPane;
 
 /**
  * Describe responsibilities here. NOTE: this class has NO PREREQUISITES!

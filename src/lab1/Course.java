@@ -14,8 +14,9 @@ public abstract class Course {
     private double credits;
     
 
-    public String getCourseNumber() {
-        return courseNumber;
+    public void getCourseNumber() {
+        SimpleOutput so = new SimpleOutput();
+        so.writeStringToConsole(courseNumber);;
     }
 
     public void setCourseNumber(String courseNumber) {
@@ -26,8 +27,9 @@ public abstract class Course {
         }
     }
 
-    public double getCredits() {
-        return credits;
+    public void getCredits() {
+        SimpleOutput so = new SimpleOutput();
+        so.writeDoubleToConsole(credits);
     }
 
    public void setCredits(double credits) {
