@@ -37,8 +37,6 @@ public abstract class Course {
             this.credits = credits;
         }
     }
-       
-    }
     
     
 }
