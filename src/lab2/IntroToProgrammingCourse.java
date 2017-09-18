@@ -12,23 +12,33 @@ public class IntroToProgrammingCourse implements Course {
     private double credits;
 
     @Override
-    public void setCourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setCourseNumber(String courseNumber) {
+        if(courseNumber == null || courseNumber.length() == 0){
+            throw new IllegalArgumentException("Course number cannot be null or empty");
+        }else{ 
+            this.courseNumber = courseNumber;
+        }
     }
 
     @Override
-    public void setCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setCredits(double credits) {
+         if(credits < 0.5 || credits > 4.0) {
+            throw new IllegalArgumentException("Credits must be in the range of .5 and 4.0");
+        }else{
+            this.credits = credits;
+        }
     }
 
     @Override
-    public String getCourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void getCourseNumber() {
+        SimpleOutput so = new SimpleOutput();
+        so.writeStringToConsole(courseNumber);
     }
 
     @Override
-    public String getCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void getCredits() {
+        SimpleOutput so = new SimpleOutput();
+        so.writeDoubleToConsole(credits);
     }
 
     

@@ -16,7 +16,7 @@ public abstract class Course {
 
     public void getCourseNumber() {
         SimpleOutput so = new SimpleOutput();
-        so.writeStringToConsole(courseNumber);;
+        so.writeStringToConsole(courseNumber);
     }
 
     public void setCourseNumber(String courseNumber) {

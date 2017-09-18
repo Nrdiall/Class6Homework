@@ -9,11 +9,11 @@ package lab2;
  *
  * @author Naython
  */
-public interface Course {
-    
-    public abstract void setCourseNumber(String courseNumber);
-    public abstract void setCredits(double credits);
-    public abstract void getCourseNumber();
-    public abstract void getCredits();
-    
+public class SimpleOutput {
+    public void writeStringToConsole(String x){
+        System.out.println(x);
+    }
+     public void writeDoubleToConsole(double x){
+        System.out.println(x);
+    }
 }
